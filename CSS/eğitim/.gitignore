@@ -1,0 +1,22 @@
+Aşağıdakileri 
+# resimler
+# videolar
+# logolar
+# paket yöneticisi ile kurulmuş olabilir.
+
+##other
+#node_modules/
+#bower_components/
+.tmp
+.sass-cache
+#builds/**/images/*
+*.ogg
+*.mp3
+*.mp4
+*.png
+*.jpeg
+*.psd
+
+# packages 
+password.txt
+
