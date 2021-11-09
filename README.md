@@ -4,4 +4,4 @@ ASDFAWREG
 AERGERHAERHAR
 AERHERHAERH
 
-[lorem ] {http://google.com}
+[lorem] (http://google.com)
