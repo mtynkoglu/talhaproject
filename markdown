@@ -12,3 +12,5 @@
 resim için
 
 ![acıklama](link koy )
+
+console.log("Hello, World!");
