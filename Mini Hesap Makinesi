@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Hesap Makinesi</title>
+</head>
+<body>
+   
+<p>Mini hesap makinesi</p>
+   <script>
+
+        function toplama(sayi1, sayi2)
+        {   
+            var sonuc=(Number(sayi1)+Number(sayi2));
+            return sonuc;
+        
+        }
+        function cikarma(sayi1, sayi2)
+        {   
+            var sonuc=(Number(sayi1)-Number(sayi2));
+            return sonuc;;
+        
+        }
+        function carpma(sayi1, sayi2)
+        {   
+            var sonuc=(Number(sayi1)*Number(sayi2));
+            return sonuc;;
+        
+        }
+        function bolme(sayi1, sayi2)
+        {  
+            var sonuc=(Number(sayi1)/Number(sayi2));
+            return sonuc;;
+        
+        }
+        
+        function hesapla()
+        {
+            var islem=document.getElementById("islem").value;
+            var sayi1=document.getElementById("sayi1").value;
+            var sayi2=document.getElementById("sayi2").value;
+            
+        /*
+            if (islem=="+")
+            {
+                toplama(sayi1, sayi2);
+            }
+            
+            else if (islem=="-")
+            {
+                cikarma(sayi1, sayi2);
+            }
+            else if (islem=="*")
+            {
+                carpma(sayi1, sayi2);
+            }
+            else if (islem=="/")
+            {
+                bolme(sayi1, sayi2);
+            }
+         }
+        */
+
+        switch (islem)
+            {
+            case "+":
+                var s=toplama(sayi1, sayi2)
+                alert(s)
+                break;
+            case "-":
+                var s=cıkarma(sayi1, sayi2)
+                console.log(s)
+                break;
+            case "*":  
+            case "x":  
+            case "X":
+                var s=carpma(sayi1, sayi2)
+                document.getElementById("sonuc").innerText=s;
+                break;
+            case "/":
+                var s=bolme(sayi1, sayi2);
+                document.getElementById("sonuc").innerText=s; 
+                break;
+            default:
+            alert("geçersiz işlem yaptınız.")
+            }
+        }
+
+           </script>
+        
+           <input type="text" id="sayi1">
+           <input type="text" id="islem">
+           <input type="text" id="sayi2">
+           <button onclick="hesapla()">hesapla</button>
+           <p id="sonuc"></p>
+</body>
+</html>
+
+
+
+console.log("Merhaba Dünya")
+alert("Hoşgeldiniz Beyefendi :) ")
